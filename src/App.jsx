@@ -11,10 +11,10 @@ import { AnimatePresence } from 'framer-motion';
 function App() {
   return (
     <Router>
-      <Navbar />
-      <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
-        <div className="max-w-5xl w-11/12 mx-auto">
-          <AnimatePresence mode={'wait'}>
+      <AnimatePresence mode={'wait'}>
+        <Navbar />
+        <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
+          <div className="max-w-5xl w-11/12 mx-auto">
             <Routes>
               <Route key="home" path="/" element={<Intro />} />
               <Route
@@ -25,10 +25,10 @@ function App() {
               <Route key="contact" path="/Contact" element={<Contact />} />
               <Route key="timeline" path="/Timeline" element={<Timeline />} />
             </Routes>
-          </AnimatePresence>
-          <Footer />
+            <Footer />
+          </div>
         </div>
-      </div>
+      </AnimatePresence>
     </Router>
   );
 }

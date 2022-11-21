@@ -67,7 +67,7 @@ const Navbar = () => {
   return (
     <nav
       className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300
-    text-l font-medium"
+    text-l font-medium p-2"
     >
       <button
         type="button"
@@ -76,11 +76,13 @@ const Navbar = () => {
       >
         {theme === 'dark' ? sun : moon}
       </button>
-      <ul className="flex gap-12 justify-center pt-5">
+      <ul className="flex gap-12 justify-center pt-5 mb-2">
         <NavLink
           to="/"
           className={({ isActive }) =>
-            isActive ? 'animate-bounce hover:border-b-2' : 'hover:border-b-2'
+            isActive
+              ? 'animate-bounce'
+              : 'border-b-2 !m-0 hover:border-white border-transparent'
           }
         >
           <li>Hi, I'm Jerry</li>
@@ -88,7 +90,9 @@ const Navbar = () => {
         <NavLink
           to="/Portfolio"
           className={({ isActive }) =>
-            isActive ? 'animate-bounce' : 'hover:border-b-2'
+            isActive
+              ? 'animate-bounce'
+              : 'border-b-2 !m-0 hover:border-white border-transparent'
           }
         >
           <li>Portfolio</li>
@@ -96,7 +100,9 @@ const Navbar = () => {
         <NavLink
           to="/Timeline"
           className={({ isActive }) =>
-            isActive ? 'animate-bounce' : 'hover:border-b-2'
+            isActive
+              ? 'animate-bounce'
+              : 'border-b-2 !m-0 hover:border-white border-transparent'
           }
         >
           <li>Timeline</li>
@@ -104,7 +110,9 @@ const Navbar = () => {
         <NavLink
           to="/Contact"
           className={({ isActive }) =>
-            isActive ? 'animate-bounce' : 'hover:border-b-2'
+            isActive
+              ? 'animate-bounce'
+              : 'border-b-2 !m-0 hover:border-white border-transparent'
           }
         >
           <li>Contact</li>

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { keyframes } from 'styled-components';
 import { motion as m } from 'framer-motion';
+import NextButton from './NextButton';
 
 function Intro() {
   const hue = keyframes`
@@ -32,8 +33,8 @@ function Intro() {
 
   return (
     <m.div
-      initial={{ opacity: 0, y: '100%' }}
-      animate={{ opacity: 1, y: '0%' }}
+      initial={{ opacity: 0, x: '100%' }}
+      animate={{ opacity: 1, x: '0%' }}
       transition={{ duration: 1, ease: 'easeOut' }}
       exit={{ duration: 1, opacity: 0 }}
       className="flex items-center justify-center flex-col text-center pt-40 pb-6"
@@ -46,7 +47,13 @@ function Intro() {
         <m.p
           initial={{ opacity: 0, y: '100%' }}
           animate={{ opacity: 1, y: '0%' }}
-          transition={{ delay: 0.75, duration: 0.75, ease: 'easeOut' }}
+          transition={{
+            type: 'spring',
+            stiffness: 125,
+            delay: 1,
+            duration: 1,
+            ease: 'easeOut',
+          }}
           className="text-7xl md:text-7xl mb-3 font-medium pt-5"
         >
           <AnimatedGradientText>Fullstack Developer</AnimatedGradientText>
@@ -61,6 +68,7 @@ function Intro() {
         The website is made with React, Framer Motion, Styled Components,
         Tailwind CSS. Data is served on Strapi CMS.
       </text>
+      <NextButton url={'/portfolio'} />
     </m.div>
   );
 }
