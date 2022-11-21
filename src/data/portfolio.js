@@ -1,20 +1,20 @@
 export default [
-   {
-      title: 'Terminal Website',
-      imgUrl: '/assets/terminal-website.jpg',
-      stack: ['HTML', 'CSS', 'JavaScript'],
-      link: 'https://fkcodes.com',
-   },
-   {
-      title: 'Developer Portfolio',
-      imgUrl: '/assets/dev-portfolio.jpg',
-      stack: ['React', 'Tailwind', 'Vite'],
-      link: 'https://thehackershideout.com',
-   },
-   {
-      title: 'AI Nerf Gun',
-      imgUrl: '/assets/ai-nerf-gun.jpg',
-      stack: ['Python', 'C++', 'Robotics'],
-      link: 'https://youtu.be/A8eegxL82PI',
-   },
-]
+  {
+    title: 'Capstone',
+    imgUrl: '/assets/port.png',
+    stack: ['React', 'Redux', 'JavaScript'],
+    link: 'http://127.0.0.1:5173/',
+  },
+  {
+    title: 'Portfolio',
+    imgUrl: '/assets/port.png',
+    stack: ['React', 'Tailwind', 'Vite'],
+    link: 'http://127.0.0.1:5173/',
+  },
+  {
+    title: 'JPFP',
+    imgUrl: '/assets/port.png',
+    stack: ['Javascript', 'React', 'Express'],
+    link: 'http://127.0.0.1:5173/',
+  },
+];

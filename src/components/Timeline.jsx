@@ -25,7 +25,9 @@ function Timeline() {
           ))}
         </div>
       </div>
-      <NextButton url={'/contact'} />
+      <div className="flex items-center justify-center flex-col text-center pt-20 pb-6">
+        <NextButton url={'/contact'} />
+      </div>
     </m.div>
   );
 }
