@@ -72,7 +72,7 @@ const Navbar = () => {
       <button
         type="button"
         onClick={handleThemeSwitch}
-        className="fixed p-2 z-10 right-20 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md"
+        className="fixed p-2 z-10 right-10 top-20 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md lg:right-20 lg:top-4 md:right-20 md:top-4"
       >
         {theme === 'dark' ? sun : moon}
       </button>
@@ -80,7 +80,7 @@ const Navbar = () => {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            isActive ? 'animate-bounce' : undefined
+            isActive ? 'animate-bounce hover:border-b-2' : 'hover:border-b-2'
           }
         >
           <li>Hi, I'm Jerry</li>
@@ -88,7 +88,7 @@ const Navbar = () => {
         <NavLink
           to="/Portfolio"
           className={({ isActive }) =>
-            isActive ? 'animate-bounce' : undefined
+            isActive ? 'animate-bounce' : 'hover:border-b-2'
           }
         >
           <li>Portfolio</li>
@@ -96,7 +96,7 @@ const Navbar = () => {
         <NavLink
           to="/Timeline"
           className={({ isActive }) =>
-            isActive ? 'animate-bounce' : undefined
+            isActive ? 'animate-bounce' : 'hover:border-b-2'
           }
         >
           <li>Timeline</li>
@@ -104,7 +104,7 @@ const Navbar = () => {
         <NavLink
           to="/Contact"
           className={({ isActive }) =>
-            isActive ? 'animate-bounce' : undefined
+            isActive ? 'animate-bounce' : 'hover:border-b-2'
           }
         >
           <li>Contact</li>

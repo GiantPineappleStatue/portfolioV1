@@ -40,9 +40,8 @@ function Intro() {
     >
       <h1 className="text-4xl md:text-7xl dark:text-white mb-1 md:mb-3 font-bold">
         <p className="text-xs text-left">Hi, I'm</p>
-        Jerry
+        Jerry,
       </h1>
-      <p className="text-left">I'm a</p>
       <div className="overflow-hidden">
         <m.p
           initial={{ opacity: 0, y: '100%' }}
@@ -53,7 +52,7 @@ function Intro() {
           <AnimatedGradientText>Fullstack Developer</AnimatedGradientText>
         </m.p>
       </div>
-      <p className="text-sm max-w-xl mb-6 font-bold">
+      <text className="text-sm max-w-xl mb-6 font-bold">
         I'm a fullstack developer exploring the software engineering world.
         <br />
         This is the first version of my personal portfolio. Please take a look
@@ -61,7 +60,7 @@ function Intro() {
         <br />
         The website is made with React, Framer Motion, Styled Components,
         Tailwind CSS. Data is served on Strapi CMS.
-      </p>
+      </text>
     </m.div>
   );
 }
